@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.azekexteriors.com/",
+  "path": "index",
+  "timestamp": "2026-05-06T02:36:00.798Z",
+  "title": "The Most Trusted Name in Trim, Moulding and Fastening | AZEK Exteriors",
+  "template": "homepage",
+  "blocks": [
+    "carousel",
+    "columns",
+    "columns",
+    "columns",
+    "cards",
+    "cards",
+    "embed"
+  ]
+}

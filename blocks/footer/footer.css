@@ -1,0 +1,180 @@
+/* Footer - matching azekexteriors.com */
+footer {
+  background: #2D2A26;
+  color: #fff;
+}
+
+footer .footer-wrapper {
+  max-width: 100%;
+  margin: 0;
+}
+
+footer .block {
+  max-width: 100%;
+  margin: 0;
+}
+
+footer .block > div:first-child {
+  display: none;
+}
+
+/* Brand section - blue top bar */
+footer .footer-brand {
+  background: #0F4B83;
+  padding: 30px 20px;
+}
+
+footer .footer-brand > div {
+  max-width: 1246px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+footer .footer-brand p {
+  margin: 0;
+}
+
+footer .footer-brand p:first-child a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+footer .footer-brand p:last-child {
+  font-size: 0.85rem;
+}
+
+footer .footer-brand p:last-child a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+footer .footer-brand p:last-child a:hover {
+  color: #fff;
+}
+
+/* Links section - 4-column grid */
+footer .footer-links {
+  padding: 40px 20px;
+  max-width: 1246px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: 900px) {
+  footer .footer-links {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 40px;
+  }
+}
+
+footer .footer-links > div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-links h6 {
+  color: #fff;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+footer .footer-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer-links li {
+  margin-bottom: 10px;
+}
+
+footer .footer-links a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer .footer-links a:hover {
+  color: #fff;
+}
+
+/* Social section */
+footer .footer-social {
+  padding: 24px 20px;
+  max-width: 1246px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: 900px) {
+  footer .footer-social {
+    padding: 24px 40px;
+  }
+}
+
+footer .footer-social h6 {
+  color: #fff;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+footer .footer-social p {
+  margin: 0;
+}
+
+footer .footer-social a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+footer .footer-social a:hover {
+  color: #fff;
+}
+
+/* Legal section */
+footer .footer-legal {
+  padding: 24px 20px;
+  max-width: 1246px;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  footer .footer-legal {
+    padding: 24px 40px;
+  }
+}
+
+footer .footer-legal p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.7rem;
+  margin: 0 0 4px;
+}
+
+footer .footer-legal a {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.7rem;
+  text-decoration: none;
+}
+
+footer .footer-legal a:hover {
+  color: #fff;
+}

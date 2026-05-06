@@ -1,0 +1,114 @@
+/* Columns Block */
+.columns > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.columns > div > div {
+  flex: 1;
+}
+
+.columns img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+@media (min-width: 900px) {
+  .columns > div {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 32px;
+  }
+}
+
+/* Columns in navy-blue sections (value props / stats) */
+.section.navy-blue .columns > div {
+  text-align: center;
+}
+
+.section.navy-blue .columns > div > div {
+  padding: 20px;
+}
+
+.section.navy-blue .columns h3,
+.section.navy-blue .columns h4 {
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.section.navy-blue .columns p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Stats variant - large numbers */
+.section.navy-blue .columns h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+/* CTA row in columns */
+.columns > div:last-child {
+  justify-content: center;
+}
+
+.columns > div:last-child a {
+  display: inline-block;
+  padding: 12px 32px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.section:not(.navy-blue) .columns > div:last-child a {
+  border-color: var(--color-primary, #0F4B83);
+  color: var(--color-primary, #0F4B83);
+}
+
+.columns > div:last-child a:hover {
+  background: #fff;
+  color: var(--color-primary, #0F4B83);
+  text-decoration: none;
+}
+
+.section:not(.navy-blue) .columns > div:last-child a:hover {
+  background: var(--color-primary, #0F4B83);
+  color: #fff;
+}
+
+/* Columns with images (feature cards - The Board / 25 Years) */
+.section:not(.navy-blue) .columns > div > div {
+  text-align: center;
+}
+
+.section:not(.navy-blue) .columns img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.section:not(.navy-blue) .columns h4 {
+  color: var(--color-dark, #2D2A26);
+  font-size: 1.25rem;
+}
+
+.section:not(.navy-blue) .columns p {
+  font-size: 0.9rem;
+  color: var(--color-grey, #4F4C4D);
+  line-height: 1.6;
+}
+
+.section:not(.navy-blue) .columns a:not([class]) {
+  color: var(--color-secondary, #005BBB);
+  font-weight: 600;
+}

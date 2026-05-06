@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "projectType": "doc"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": ["https://www.azekexteriors.com/"],
+      "description": "AZEK Exteriors homepage with hero, product categories, inspiration gallery, and brand messaging",
+      "blocks": [
+        {
+          "name": "carousel",
+          "instances": ["#hero-home .slider.home-hero"]
+        },
+        {
+          "name": "columns",
+          "instances": [".mediaTextLinkStack.mtls3.blueBG", ".mediaTextLinkStack.mtls2"]
+        },
+        {
+          "name": "cards",
+          "instances": [".azekHomeGrid", ".resources-home .mtls4"]
+        },
+        {
+          "name": "embed",
+          "instances": [".mts_Media.iframe iframe"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero Carousel",
+          "selector": "#hero-home",
+          "style": null,
+          "blocks": ["carousel"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Value Proposition",
+          "selector": ".sfContentBlock:has(.mtls3.blueBG):first-of-type",
+          "style": "navy-blue",
+          "blocks": ["columns"],
+          "defaultContent": [".mtls_IntroHeadline", ".mtls_IntroCopy"]
+        },
+        {
+          "id": "section-3",
+          "name": "Product Grid",
+          "selector": ".homeProducts",
+          "style": null,
+          "blocks": ["cards"],
+          "defaultContent": [".hp_Headline"]
+        },
+        {
+          "id": "section-4",
+          "name": "Video Section",
+          "selector": [".sfContentBlock:has(.ccb_Headline)", ".sfContentBlock:has(.videoWrapper)"],
+          "style": "navy-blue",
+          "blocks": ["embed"],
+          "defaultContent": [".ccb_Headline", ".ccb_Body"]
+        },
+        {
+          "id": "section-5",
+          "name": "Feature Cards",
+          "selector": ".sfContentBlock:has(.mtls2)",
+          "style": null,
+          "blocks": ["columns"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6",
+          "name": "Sustainability Stats",
+          "selector": ".sfContentBlock:has(.mtls3.blueBG):last-of-type",
+          "style": "navy-blue",
+          "blocks": ["columns"],
+          "defaultContent": [".mtls_IntroHeadline", ".mtls_IntroCopy"]
+        },
+        {
+          "id": "section-7",
+          "name": "Additional Resources",
+          "selector": ".resources-home",
+          "style": null,
+          "blocks": ["cards"],
+          "defaultContent": [".mtls_IntroHeadline"]
+        }
+      ]
+    }
+  ]
+}
